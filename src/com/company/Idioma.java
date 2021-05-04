@@ -1,22 +1,20 @@
 package com.company;
 
-import java.util.Scanner;
-
-public class Cadena {
-    public Cadena(){}
+public class Idioma {
+    public Idioma(){}
 
     public String Lectura(){
-        Scanner lee = new Scanner(System.in);
-        String dato;
-        dato = lee.nextLine();
-        return dato;
+
+        String datos;
+        datos = Main.scan.nextLine();
+        return datos;
     }
 
     public void Esp_Alb(){
         String data;
-        Cadena Funciones = new Cadena();
+        Idioma idioma = new Idioma();
         System.out.println("Ingresa una frase: ");
-        data =  Funciones.Lectura();
+        data =  idioma.Lectura();
         for (int i = 0, j = 0; i< data.length(); i++, j++){
             if (data.substring(j,i+1).equals("a")){
                 System.out.print("y");
@@ -73,7 +71,7 @@ public class Cadena {
             }else if (data.substring(j,i+1).equals("z")){
                 System.out.print("w");
             }else if (data.substring(j,i+1).equals(" ")){
-                System.out.println(" ");
+                System.out.print(" ");
             }else{
                 System.out.print(data.substring(j,i+1));
             }
@@ -83,7 +81,7 @@ public class Cadena {
     }
     public void Alb_Esp(){
         String data;
-        Cadena Funciones = new Cadena();
+        Idioma Funciones = new Idioma();
         System.out.println("Ingresa una frase: ");
         data =  Funciones.Lectura();
         for (int i = 0, j = 0; i< data.length(); i++, j++){

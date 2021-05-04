@@ -6,7 +6,7 @@ public class Main {
     static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
 
-        Cadena operacion = new Cadena();
+        Idioma operacion = new Idioma();
         boolean seguirpidiendo = true;
 
         while(seguirpidiendo){
